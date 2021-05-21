@@ -1,0 +1,245 @@
+/*
+
+@author: Gustavo Henrique
+
+*/
+
+/*
+    ESTILIZANDO O HTML E O BODY 
+*/
+
+html,
+body,
+#home {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: url(../imagens/capa.png),
+        url(../imagens/ruido.png),
+        linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+}
+
+/*  
+    Fim estilização BODY
+    Estilizando a navegação do logo principal
+*/
+
+nav.estilo-navbar {
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: blueviolet;
+    padding: 2px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background: purple;
+    color: white;
+    padding: 2px 10px;
+    transition: 0.5s 0s;
+}
+
+.navbar-light .navbar-toggler-icon {
+    color: white;
+    border-color: white;
+}
+
+.divisor {
+    width: 1px;
+    background: purple;
+    margin: 4px 16px;
+}
+
+/*
+    Estilizando itens do body
+*/
+
+.itens-body {
+    text-align: center;
+}
+
+/*
+    Estoilizando botões principais do body
+*/
+
+.btn-custom {
+    color: blue;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 15px 20px;
+    margin: 0px 20px;
+}
+
+.btn-azul {
+    background: turquoise;
+}
+
+.btn-azul:hover {
+    background: purple;
+    color: white;
+}
+
+.btn-roxo {
+    background: blue;
+    color: white;
+}
+
+.btn-roxo:hover {
+    background: white;
+    color: blue;
+}
+
+/*
+    Estilizando conteúdos principais da section serviços
+*/
+.albuns {
+    padding: 10px 0;
+}
+
+#servicos {
+    background: white;
+    padding: 20px 0;
+}
+
+
+#servicos h1,
+h3 {
+    color: blueviolet;
+}
+
+#recursos h1,
+h3 {
+    color: skyblue;
+}
+
+#recursos {
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.rotacionar {
+    transform: rotate(35deg);
+    padding-left: 80px;
+}
+
+
+/*Tipografia*/
+
+
+#home h1 {
+    font-size: 1em;
+    font-weight: 100;
+    letter-spacing: -0.05em;
+    color: white;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2em;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+}
+
+/*
+    Estilizando rodapé
+*/
+
+footer {
+    background: black;
+    color: white;
+    position: relative;
+    padding: 50px 0px;
+}
+
+footer img {
+    margin-top: 50px;
+}
+
+footer h4 {
+    color: cadetblue;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em;
+}
+
+footer a i {
+    color: white;
+    margin-left: 10px;
+}
+
+
+/*Usando media queries para auterar os tamanhos dos textos para visualização 
+em diferentes telas*/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+    .btn-custom {
+        margin: 30px;
+        font-size: 0.8em;
+    }
+
+    #home h1 {
+        font-size: 4em;
+    }
+
+    footer h4 {
+        margin-top: 15px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .btn-custom {
+        margin: 30px;
+    }
+
+    #home h1 {
+        font-size: 5em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .btn-custom {
+        margin: 30px;
+    }
+
+    #home h1 {
+        font-size: 6em;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #home h1 {
+        font-size: 7em;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    #home h1 {
+        font-size: 7em;
+    }
+}
